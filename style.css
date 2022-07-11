@@ -26,6 +26,23 @@ a{
     background-color: white;
     border-radius: 5px;
 }
+.donate-button{
+    color: rgba(239, 35, 60, 1);
+    font-weight: 700;
+    border-right: 2px solid rgba(239, 35, 60, 1);
+    border-top: 2px solid rgba(239, 35, 60, 1);
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    padding: 5px;
+    transition: all ease .3s;
+}
+.donate-button:hover{
+    border-bottom: 2px solid rgba(239, 35, 60, 1);
+    border-left: 2px solid rgba(239, 35, 60, 1);
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    
+}
 .container{
     min-height: 100vh;
     width: 100%;
@@ -82,7 +99,7 @@ a{
     align-items: center;
     justify-content: center;
 }
-#help .help .help-top{
+#help .help .top{
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,4 +116,39 @@ a{
     background-color: rgba(254, 244, 245, 1);
     padding: 20px;
     margin: 20px auto;
+}
+#pray .pray > div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#pray .pray > div img{
+    width: 30%;
+} 
+#charity .charity .top{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#charity .charity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#charity .charity .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#charity .charity .bottom .card{
+    margin: 0 10px;
+    width: 25%;
+    border: .1px solid rgb(194, 192, 192);
+    border-radius: 12px;
+}
+#charity .charity .bottom .card > div{
+    padding: 10px;
+}
+#charity .charity .bottom .card img{
+    width: 100%;
 }
