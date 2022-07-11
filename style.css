@@ -17,11 +17,11 @@ a{
     color: white;
     border-radius: 5px;
     margin-top: 20px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all ease .5s;
 }
 .cta:hover{
-    border: 1px solid rgba(239, 35, 60, 1);
+    border: 2px solid rgba(239, 35, 60, 1);
     color: rgba(239, 35, 60, 1);
     background-color: transparent;
     border-radius: 5px;
