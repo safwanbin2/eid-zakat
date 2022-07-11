@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.cta{
+    display: inline-block;
+    background-color: rgba(239, 35, 60, 1);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    transition: all ease .5s;
+}
+.cta:hover{
+    border: 1px solid rgba(239, 35, 60, 1);
+    color: rgba(239, 35, 60, 1);
+    background-color: white;
+    border-radius: 5px;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    background-image: url(images/hero-background.png);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, black, black, transparent);
+    opacity: .9;
+    z-index: -1;
+}
+#hero .hero{
+    max-width: 1200px;
+    color: white;
+}
+#hero .hero div{
+    width: 60%;
+}
+#main .main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+#main .main > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 40px;
+}
+#main .main .half-width{
+    width: 50%;
+}
+#help .help{
+    /* max-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#help .help .help-top{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-bottom: 40px;
+}
+#help .help .help-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#help .help .help-bottom .card{
+    width: 60%;
+    background-color: rgba(254, 244, 245, 1);
+    padding: 20px;
+    margin: 20px auto;
+}
